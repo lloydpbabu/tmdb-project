@@ -21,3 +21,22 @@ export type Movies = {
     total_pages: number;
     total_results: number;
 }
+
+export type Cast = {
+    character: string;
+    credit_id: string;
+    name: string;
+    profile_path: string;
+}
+
+export type Crew = {
+    job: string;
+    name: string;
+    credit_id: string;
+}
+
+export type Credits = {
+    id: number;
+    cast: Cast[];
+    crew: Crew[];
+}
