@@ -26,9 +26,9 @@ const Movie: NextPage<Props> = ({movie, directors, cast}) => {
       <Header />
       <Breadcrumb title={movie.original_title}/>
       <MovieInfo />
-      <Grid>
+      {/* <Grid>
         <Card />
-      </Grid>
+      </Grid> */}
     </main>
   );
 };
