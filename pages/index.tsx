@@ -24,6 +24,8 @@ const Home: NextPage = () => {
     }
   }
 
+  if (error) return <div>Something went wrong!</div>
+
   return (
     <main className="relative h-screen overflow-y-scroll" onScroll={scrollHandler}>
       <Header setQuery={setQuery} />
