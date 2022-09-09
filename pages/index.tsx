@@ -1,3 +1,4 @@
+import Head from "next/head";
 import type { NextPage } from "next";
 import Link from "next/link";
 import Header from "../components/Header/Header";
@@ -28,6 +29,10 @@ const Home: NextPage = () => {
 
   return (
     <main className="relative h-screen overflow-y-scroll" onScroll={scrollHandler}>
+      <Head>
+        <title>RMDB - React Movie DB</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
       <Header setQuery={setQuery} />
       {!query && data && data.pages ? (
         <Hero

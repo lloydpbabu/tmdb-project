@@ -32,6 +32,7 @@ const MovieInfo = ({
   budget,
   revenue,
 }: Props) => {
+
   return (
     <div className="relative w-full h-auto p-4">
       <div className="relative h-full min-h-128 flex flex-col md:flex-row max-w-7xl p-4 m-auto z-10 rounded-xl bg-zinc-800 bg-opacity-90">
@@ -63,6 +64,14 @@ const MovieInfo = ({
               <Pill className="ml-0" text={`Running time: ${calcTime(time)}`} />
               <Pill text={`Budget: ${convertMoney(budget)}`} />
               <Pill text={`Revenue: ${convertMoney(revenue)}`} />
+            </div>
+            <div className="mt-8 flex flex-col space-y-4 space-x-0 md:flex-row md:space-y-0 md:space-x-4 items-center">
+              <a href={thumbUrl} download={`${title}.jpg`}><button className="w-52 bg-amber-600 text-white p-3 rounded-full">
+                Download Poster
+              </button></a>
+              <a href={backgroundImgUrl} download={`${title}.jpg`}><button className="w-52 bg-sky-600 text-white p-3 rounded-full">
+                Download Backdrop
+              </button></a>
             </div>
           </div>
         </div>
