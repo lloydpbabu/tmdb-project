@@ -4,7 +4,7 @@ const nextConfig = {
   swcMinify: true,
    images: {
     unoptimized: true,
-     domains: ["image.tmdb.org"],
+    domains: ["image.tmdb.org"],
   },
   // images: {
   //   domains: ["image.tmdb.org"],
