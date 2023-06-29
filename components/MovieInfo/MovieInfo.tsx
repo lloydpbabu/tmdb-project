@@ -85,6 +85,7 @@ const MovieInfo = ({
         layout="fill"
         src={backgroundImgUrl}
         alt="thumb"
+        unoptimized={true}
       />
     </div>
   );
