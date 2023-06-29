@@ -12,6 +12,7 @@ const Thumb = ({ imgUrl }: Props) => {
       objectFit="cover"
       src={imgUrl}
       alt="thumbnail"
+      unoptimized={true}
     />
   );
 };
