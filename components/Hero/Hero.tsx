@@ -14,7 +14,7 @@ const Hero = ({ imgUrl, title, text }: Props) => {
             <p className="text-lg md:text-xl">{text}</p>
         </div>
       </div>
-      <Image className="brightness-50" priority objectFit="cover" objectPosition="center" layout="fill" src={imgUrl} alt='Hero-image'/>
+      <Image className="brightness-50" priority objectFit="cover" objectPosition="center" layout="fill" src={imgUrl} alt='Hero-image' unoptimized={true}/>
     </div>
   );
 };
